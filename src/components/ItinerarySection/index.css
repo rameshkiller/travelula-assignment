@@ -1,0 +1,101 @@
+.image-section {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/phone-auth-d0a8d.appspot.com/o/LPackages%2Fpk-5.webp?alt=media&token=90155504-1321-4cd0-b8f1-215f1e8efbae"); /* Replace with your local file name */
+  height: 85vh;
+  position: relative;
+  top: -300px;
+  background-size: cover !important;
+  background-position: center !important;
+  margin-top: 100%;
+}
+
+.image-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity and color as needed */
+  z-index: 1; /* Make sure the overlay is behind the text */
+}
+/* Itinerary Section */
+.itinerary1 {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: -180px;
+  height: 830px;
+}
+
+/* Heading */
+.itinerary1 h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff6600;
+}
+
+/* Container for the itinerary cards */
+.itinerary-container1 {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  justify-content: center;
+  gap: 20px; /* Adds space between the cards */
+  position: relative;
+}
+.itinerary1 h2 {
+  margin-top: -7%;
+  position: relative;
+  top: -35px;
+}
+/* Individual itinerary card */
+.itinerary-day {
+  background: white;
+  padding: 20px;
+  flex: 1 1 calc(50% - 40px); /* Each card takes 50% width minus margin */
+  max-width: 400px; /* Limits maximum width */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styles */
+.icon {
+  font-size: 30px;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+/* List styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: left;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+ul li::before {
+  margin-right: 10px;
+  color: #ff6600;
+}
+
+/* Responsive design: Stacks cards in a single column on smaller screens */
+@media (max-width: 768px) {
+  .itinerary-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .itinerary-day {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

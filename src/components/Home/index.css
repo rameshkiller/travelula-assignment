@@ -1,0 +1,519 @@
+.hero {
+  position: relative;
+  top: 585px;
+  height: 760px;
+  /*min-height: 500px; /* You can adjust the height as needed */
+  background: url("https://static.vecteezy.com/system/resources/previews/049/538/727/non_2x/wild-animal-in-nature-tiger-wildlifegraphy-free-photo.jpg")
+    no-repeat bottom center; /* Align background at the bottom */
+  background-size: cover; /* Make sure the background image covers the entire area */
+  display: flex;
+  align-items: flex-end; /* Align the content at the bottom of the hero section */
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  padding-bottom: 20px; /* You can adjust the padding to ensure spacing */
+  margin-top: 150%;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity and color as needed */
+  z-index: 1; /* Make sure the overlay is behind the text */
+}
+.hero-content {
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  top: -130px;
+  z-index: 5;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+  text-align: center;
+  position: relative;
+  left: 150px;
+  top: -100px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 180px;
+  top: -110px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+  position: relative;
+  left: 130px;
+  top: -120px;
+}
+
+.btn:hover {
+  background-color: #ff4757;
+}
+
+/* Overview Section */
+.overview {
+  background: url("https://source.unsplash.com/1600x900/?savannah,lion")
+    no-repeat center/cover;
+  padding: 60px 20px; /* Reduced top padding from 500px to 60px */
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 485px; /* Adjust top to move the entire section down */
+  margin-top: -35%;
+}
+
+.overview-content {
+  min-width: 100%;
+  margin: 0 auto; /* Removed large margin to push content up */
+  padding: 20px;
+  text-align: left;
+  color: rgb(25, 25, 25);
+  box-sizing: border-box;
+  position: relative;
+  top: 80px;
+  left: -60%;
+}
+
+.overview-content h2 {
+  font-size: 28px;
+  margin-top: 280px;
+  position: relative;
+  left: 880px;
+  top: 180px;
+  color: rgb(224, 48, 48);
+  z-index: 10;
+}
+
+.overview-content p {
+  position: relative;
+  left: 880px;
+  top: 185px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: black;
+  z-index: 10;
+  width: 100%;
+}
+
+/* Text Styling */
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+strong {
+  color: #ffdd57;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #ffcc00;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #ffdd57;
+}
+
+/* Image Container */
+.overview-image {
+  text-align: right;
+  margin: 20px 0;
+  padding-right: 20px;
+  position: relative; /* Ensures that the image stays in place */
+}
+
+/* Image Styling */
+.overview-image img {
+  width: 30%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.overview-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Itinerary Section */
+/* Itinerary Section */
+.itinerary {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  margin-top: 280px; /* Pushes the entire content down */
+  display: flex;
+  max-height: 1050px;
+  flex-direction: row;
+  position: relative;
+  margin-top: 400px;
+}
+
+/* Heading */
+.itinerary h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff6600;
+  position: relative;
+  top: 230px;
+}
+
+/* Container for the itinerary cards */
+.itinerary-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  justify-content: center;
+  position: relative;
+  top: 250px;
+  gap: 20px; /* Adds space between the cards */
+}
+
+/* Individual itinerary card */
+.itinerary-day {
+  background: white;
+  padding: 20px;
+  flex: 1 1 calc(50% - 40px); /* Each card takes 50% width minus margin */
+  max-width: 400px; /* Limits maximum width */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styles */
+.icon {
+  font-size: 30px;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+/* List styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: left;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+ul li::before {
+  content: "✅";
+  margin-right: 10px;
+  color: #ff6600;
+}
+
+/* Responsive design: Stacks cards in a single column on smaller screens */
+@media (max-width: 768px) {
+  .itinerary-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .itinerary-day {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+/*cost Section*/
+
+/* Main Section */
+.main {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 20%;
+  background: none;
+}
+
+.main h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  position: relative;
+  left: -15px;
+}
+
+/* Cards Layout */
+.main-card1 {
+  display: inline-block;
+  width: 300px;
+  margin: 15px;
+  height: 350px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  top: -65px;
+}
+
+.main-card1:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Images */
+.main-card1 img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Card Text */
+.main-card1 p {
+  font-size: 16px;
+  color: #555;
+  position: relative;
+  top: 10px;
+  margin: 5px 0;
+}
+
+/* Discount Price */
+.main-card1 p:nth-child(2) {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d9534f;
+}
+
+/* Strike-through Original Price */
+.main-card1 p:nth-child(3) {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* Duration */
+.main-card1 p:nth-child(4) {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Button */
+.main-card1 button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.main-card1 button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-card1 {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+/* Footer Section */
+.footer-section {
+  background-color: #191919ff; /* Dark background */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the footer content vertically */
+  align-items: center; /* Center the footer content horizontally */
+  padding: 40px 0; /* Add padding to the top and bottom */
+  box-sizing: border-box;
+  position: relative;
+  top: -50px;
+}
+
+/* List styles inside footer */
+.footer-section ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Align list items vertically */
+  align-items: flex-start; /* Align list items to the left */
+  gap: 10px; /* Add space between list items */
+  list-style-type: none; /* Remove default bullet points */
+  position: relative;
+  top: -50px;
+}
+
+.get-section .p {
+  position: relative;
+  top: -40px;
+  left: 5px;
+  gap: 0px;
+}
+
+/* Hover effect for list items */
+.footer-section li:hover {
+  color: white; /* Change to white on hover */
+  transform: scale(1.05); /* Slightly enlarge the item on hover */
+}
+
+/* Heading styling */
+.footer-section h1 {
+  color: rgb(227, 206, 206);
+  font-family: TT Norms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  top: 150px;
+  width: 100%;
+}
+
+/* Paragraph styling */
+.footer-section p {
+  color: rgb(255, 255, 255);
+  font-family: TT Norms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+  top: 150px;
+  left: -30%;
+}
+
+/* Strong text styling */
+strong {
+  position: relative;
+  left: 10px;
+  color: rgb(201, 190, 190);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+strong:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* Terms section */
+.footer-section .terms {
+  margin-top: -10%; /* Remove the negative margin to align the element to the top */
+  padding-top: -40px; /* Optional: Add padding if you need space between other elements */
+}
+
+/* "Get" section styling */
+.get {
+  color: rgb(255, 255, 255); /* White text color */
+  font-weight: 700;
+  font-size: 18px;
+  font-family: TT Norms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  text-align: center; /* Center the text */
+  margin-top: 20px;
+  transition: color 0.3s ease; /* Smooth transition */
+  position: relative;
+  top: -50px;
+}
+
+.get:hover {
+  color: rgb(255, 255, 255); /* Highlight when hovered */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Copyrights styling */
+.get-section .copyrights {
+  color: rgb(196, 196, 196);
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  top: 50px;
+  left: 10px;
+  text-align: right; /* Center the copyright text */
+}
+
+/* Link styling */
+.footer-section a {
+  text-decoration: none;
+  color: rgb(196, 196, 196);
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: rgb(255, 255, 255); /* Change to white on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 20px; /* Add more space in smaller screens */
+  }
+
+  .footer-section ul {
+    flex-direction: column;
+    align-items: center; /* Center the list items vertically */
+  }
+
+  .footer-section li {
+    margin: 10px 0; /* Add margin for spacing in column layout */
+  }
+
+  .get {
+    margin-left: 0; /* Center "Get" text in mobile view */
+    margin-top: 20px; /* Adjust margin for smaller screens */
+  }
+
+  /* Adjust margin for headings and paragraphs */
+  .footer-section h1,
+  .footer-section p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
