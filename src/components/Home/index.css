@@ -176,12 +176,12 @@ strong {
 }
 
 /* Itinerary Section */
-/* Itinerary Section */
+
 .itinerary {
   text-align: center;
   background-color: #f9f9f9;
   padding: 60px 20px;
-  margin-top: 280px; /* Pushes the entire content down */
+  margin-top: 280px;
   display: flex;
   max-height: 1050px;
   flex-direction: row;
@@ -189,7 +189,6 @@ strong {
   margin-top: 400px;
 }
 
-/* Heading */
 .itinerary h2 {
   font-size: 28px;
   margin-bottom: 20px;
@@ -198,22 +197,21 @@ strong {
   top: 230px;
 }
 
-/* Container for the itinerary cards */
 .itinerary-container {
   display: flex;
-  flex-wrap: wrap; /* Ensures responsiveness */
+  flex-wrap: wrap;
   justify-content: center;
   position: relative;
   top: 250px;
-  gap: 20px; /* Adds space between the cards */
+  gap: 20px;
 }
 
 /* Individual itinerary card */
 .itinerary-day {
   background: white;
   padding: 20px;
-  flex: 1 1 calc(50% - 40px); /* Each card takes 50% width minus margin */
-  max-width: 400px; /* Limits maximum width */
+  flex: 1 1 calc(50% - 40px);
+  max-width: 400px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -225,7 +223,6 @@ strong {
   margin-bottom: 10px;
 }
 
-/* List styles */
 ul {
   list-style: none;
   padding: 0;
@@ -241,10 +238,12 @@ ul li {
 }
 
 ul li::before {
-  content: "✅";
+  content: "";
   margin-right: 10px;
   color: #ff6600;
 }
+
+
 
 /* Responsive design: Stacks cards in a single column on smaller screens */
 @media (max-width: 768px) {
