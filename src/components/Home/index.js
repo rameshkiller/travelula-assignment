@@ -21,12 +21,12 @@ const itinerary = [
     day: "Day 2 - Nov 15th, 2023",
     title: "Full Day Safari & Bush Breakfast",
     activities: [
-      "🌅 Early morning game drive – watch the breathtaking sunrise.",
-      "☕ Bush breakfast in the wild, surrounded by grazing wildlife.",
-      "🐆 Search for cheetahs & hyenas as Topis give birth.",
-      "🍽️ Return to camp for lunch & rest.",
-      "🐆 Afternoon drive to track leopards in hidden spots.",
-      "🌇 Sunset photography & return to camp.",
+      " Early morning game drive – watch the breathtaking sunrise.",
+      " Bush breakfast in the wild, surrounded by grazing wildlife.",
+      " Search for cheetahs & hyenas as Topis give birth.",
+      " Return to camp for lunch & rest.",
+       Afternoon drive to track leopards in hidden spots.",
+      " Sunset photography & return to camp.",
     ],
     icon: <FaSun />,
   },
@@ -34,10 +34,10 @@ const itinerary = [
     day: "Day 3 - Nov 16th, 2023",
     title: "The Ultimate Safari - Sand River & Big Cats",
     activities: [
-      "🚙 Full-day game drive to Sand River – witness the Tanzania-Kenya border.",
-      "🦁 Encounter lion prides and search for the elusive black rhino.",
-      "🍽️ Picnic lunch in the wild.",
-      "🌞 Leisure time at camp before a special Maasai cultural experience.",
+      " Full-day game drive to Sand River – witness the Tanzania-Kenya border.",
+      " Encounter lion prides and search for the elusive black rhino.",
+      " Picnic lunch in the wild.",
+      " Leisure time at camp before a special Maasai cultural experience.",
     ],
     icon: <FaBinoculars />,
   },
@@ -45,9 +45,9 @@ const itinerary = [
     day: "Day 4 - Nov 17th, 2023",
     title: "Farewell & Return to Nairobi",
     activities: [
-      "🥞 Leisure breakfast at the camp.",
-      "🚗 Drive back to Nairobi with a heart full of memories.",
-      "✈️ Drop-off at JKIA Airport.",
+      " Leisure breakfast at the camp.",
+      " Drive back to Nairobi with a heart full of memories.",
+      " Drop-off at JKIA Airport.",
     ],
     icon: <FaCampground />,
   },
@@ -130,7 +130,7 @@ const Home = () => {
         </section>
       )}
       <div className="itinerary50">
-        <h2>🗓️ Itinerary - Big Cats Week at Maasai Mara</h2>
+        <h2> Itinerary - Big Cats Week at Maasai Mara</h2>
         <div className="itinerary-container90">
           <svg
             stroke="currentColor"
@@ -148,29 +148,29 @@ const Home = () => {
           <p className="description">Arrival & First Game Drive</p>
           <ul>
             <li>
-              🚗 Pick-up from JKIA Airport at 7 AM by our 4x4 Landcruisers.
+               Pick-up from JKIA Airport at 7 AM by our 4x4 Landcruisers.
             </li>
             <li>
-              🌍 Drive through Nairobi National Park – spot lions, rhinos &
+               Drive through Nairobi National Park – spot lions, rhinos &
               giraffes.
             </li>
-            <li>🏞️ Scenic stop at The Great Rift Valley viewpoint.</li>
-            <li>🏕️ Check-in at Maasai Mara camp & lunch.</li>
+            <li> Scenic stop at The Great Rift Valley viewpoint.</li>
+            <li> Check-in at Maasai Mara camp & lunch.</li>
             <li>
-              🦁 Afternoon game drive to the Topi Plains, home to the famous
+               Afternoon game drive to the Topi Plains, home to the famous
               Topi Pride of Lions.
             </li>
-            <li>🔥 Campfire gathering & dinner at the lodge.</li>
+            <li> Campfire gathering & dinner at the lodge.</li>
           </ul>
         </div>
       </div>*/}
       <section className="itinerary">
         <div>
-          <h2>🗓️ Itinerary - Big Cats Week at Maasai Mara</h2>
+          <h2> Itinerary - Big Cats Week at Maasai Mara</h2>
           <div className="itinerary-container">
             {itinerary.map((day, index) => (
               <div className="itinerary-day" key={index}>
-                <div className="icon">{day.icon}</div>
+                
                 <h3>{day.day}</h3>
                 <h4>{day.title}</h4>
                 <ul>
