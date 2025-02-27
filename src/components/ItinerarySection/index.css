@@ -74,17 +74,33 @@ ul {
 }
 
 ul li {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.8;
   text-align: left;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
-
 ul li::before {
   margin-right: 10px;
   color: #ff6600;
+  content: "•";
+}
+.itinerary-day h3 {
+  font-size: 22px;
+  color: #ff6600; 
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Style for title heading */
+.itinerary-day h4 {
+  font-size: 20px;
+  color: #661393e5; 
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 /* Responsive design: Stacks cards in a single column on smaller screens */
